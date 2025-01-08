@@ -1,0 +1,52 @@
+    1  cd /etc/final_test/
+    2  ll
+    3  cd Final-control-work/
+    4  ll
+    5  nano README.md
+    6  git add .
+    7  git commit -am "Add new text information about project"
+    8  git config --global user.emailalex.8ulavin@gmail.com
+    9  git config --global user.name Alex Bulavin
+   10  git commit -am "Add new text information about project"
+   11  git config --global user.email "alex.8ulavin@gmail.com"
+   12  git config --global user.name "Alex Bulavin"
+   13  git commit -am "Add new text information about project"
+   14  git push
+   15  cat > home_animals
+   16  cat home_animals
+   17  cat pack_animals
+   18  cat > pack_animals
+   19  cat home_animals pack_animals > animals
+   20  cat animals
+   21  mv animals friends_of_man
+   22  ll
+   23  mkdir tasks
+   24  mv friends_of_man ./tasks/
+   25  ll ./tasks/
+   26  wget https://dev.mysql.com/downloads/file/?id=536087
+   27  ll
+   28  rm index.html\?id\=536087
+   29  ll
+   30  wget https://dev.mysql.com/get/mysql-apt-config_0.8.33-1_all.deb
+   31  ll
+   32  sudo dpkg -i mysql-apt-config_0.8.33-1_all.deb
+   33  sudo apt-get update
+   34  sudo apt-get install mysql-server
+   35  sudo apt-get download nginx
+   36  apt-get download nginx
+   37  ll
+   38  sudo dpkg -i nginx_1.24.0-2ubuntu7.1_amd64.deb
+   39  dpkg -l | grep nginx
+   40  apt-get update
+   41  sudo apt-get update
+   42  apt-get install nginx
+   43  sudo apt-get install nginx
+   44  sudo apt --fix-broken install
+   45  sudo dpkg -r nginx
+   46  sudo dpkg -r nginx_1.24.0-2ubuntu7.1_amd64
+   47  sudo dpkg -r nginx-common
+   48  dpkg -l | grep nginx
+   49  sudo dpkg -r 1.24.0-2ubuntu7.1
+   50  sudo dpkg -r nginx nginx-common
+   51  dpkg -l | grep nginx
+   52  history
