@@ -1,2 +1,7 @@
-public class Hamster {
+package Model;
+
+public class Hamster extends Home_pet{
+
+    public Hamster() {
+    }
 }
