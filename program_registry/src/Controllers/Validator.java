@@ -31,10 +31,12 @@ public class Validator {
         }
     }
 
-    private boolean isValidName (String name){
-        for (int i = 0; i < name.length(); i++) {
-            if (! Character.UnicodeBlock.of(name.charAt(i)).equals(Character.UnicodeBlock.CYRILLIC)) {
-                throw new UncorrectDataException(String.format("некорректно задано имя, допустимы только буквы кириллицы"));
+    private boolean isValidName(String name) {
+        for (int i = 0; i < name.length(); ++i) {
+            char c = name.charAt(i);
+            // Проверяем, является ли символ латинской буквой (a-z или A-Z)
+            if (!Character.isLetter(c) || (c < 'A' || (c > 'Z' && c < 'a') || c > 'z')) {
+                throw new UncorrectDataException(String.format("некорректно задано имя, допустимы только буквы латиницы"));
             }
         }
         return true;

@@ -1,5 +1,4 @@
 package Models;
-
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 
@@ -15,7 +14,7 @@ public abstract class Pet {
         return petId;
     }
     public void setName(String name) {
-        this name = name;
+        this.name = name;
     }
 
     public String getName() {
