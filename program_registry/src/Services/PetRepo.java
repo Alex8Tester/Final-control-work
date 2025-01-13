@@ -10,6 +10,9 @@ import java.io.IOException;
 import java.sql.*;
 import java.time.LocalDate;
 import Models.*;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
 
 
 public class PetRepo implements Repo<Pet> {
@@ -20,7 +23,7 @@ public class PetRepo implements Repo<Pet> {
     private String SQLstr;
 
     public PetRepo() {
-        this.petCreator = new PetCreator();
+        this.petCreator = new petCreator();
     };
 
     @Override

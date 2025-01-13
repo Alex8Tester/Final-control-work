@@ -85,21 +85,27 @@ public class consoleMenu {
     }
 
     private PetType menuChoice(Scanner in) {
-        System.out.println("Какое животное добавить:\n1 - Кошка\n2 - Собака\n3 - Хомяк\n0 - Возврат в основное меню");
+        System.out.println("Какое животное добавить:\n1 - Верблюд\n2 - Лошадка\n3 - Осел\n4 - Хомячок\n5 - Кошечка\n6 -Собака\n0 - Возврат в основное меню");
 
         while (true) {
             String key = in.next();
             switch (key) {
                 case "1":
-                    return PetType.Cat;
+                    return PetType.Camel;
                 case "2":
-                    return PetType.Dog;
+                    return PetType.Horse;
                 case "3":
+                    return PetType.Donkey;
+                case "4":
                     return PetType.Hamster;
+                case "5":
+                    return PetType.Cat;
+                case "6":
+                    return PetType.Dog;
                 case "0":
                     return null;
                 default:
-                    System.out.println("Такого варианта нет, введите число от 0 до 3");
+                    System.out.println("Такого варианта нет, введите число от 0 до 6");
                     break;
             }
         }

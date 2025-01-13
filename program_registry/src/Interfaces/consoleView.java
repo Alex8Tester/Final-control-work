@@ -9,18 +9,18 @@ public class consoleView implements View <Pet> {
     Scanner in;
 
     public consoleView() {
-        in = new Scanner(System.in, "testScanner: ");
+        in = new Scanner(System.in, "IBM866");
     }
 
     @Override
     public String getName() {
-        System.out.printf("Имя: ");
+        System.out.print("Имя: ");
         return in.nextLine();
     }
 
     @Override
     public String getBirthday() {
-        System.out.printf("Введите дату рождения в формате 'dd.mm.yyyy': ");
+        System.out.print("Введите дату рождения в формате 'dd.mm.yyyy': ");
         return in.nextLine();
     }
 
